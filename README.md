@@ -18,3 +18,7 @@ Goal: Develop the basic layout and initialise frontend
 3. In the src folder create the components directory (This is where we will create our UI components)
         InputBox.svelte, OutputMessage.svelte, DynamicArea.svelte
 4. Create basic styling for the components, apply a dark theme, and test the static look
+
+# Day 3.5
+
+1. Revised the code a bit. Added some comments, updated formatting so it's not ugly.

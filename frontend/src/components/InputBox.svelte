@@ -1,21 +1,20 @@
-<script>
-  // Component logic goes here
-</script>
-
+<!-- Input Component: For user text input -->
 <style>
-  input {
+  /* Style for the input field */
+  .custom-input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid white; /* Underline style */
     background: transparent;
     color: white;
     padding: 0;
-    height: 20px; /* Adjust to align text with the line */
+    height: 20px; /* Align text with the underline */
   }
 
-  input:focus {
+  /* Removes the outline on focus for a cleaner look */
+  .custom-input:focus {
     outline: none;
   }
 </style>
 
-<input type="text" placeholder="Type here..." />
+<input class="custom-input" type="text" placeholder="Type here..." aria-label="Input field" />

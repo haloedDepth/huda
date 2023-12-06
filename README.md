@@ -22,3 +22,13 @@ Goal: Develop the basic layout and initialise frontend
 # Day 3.5
 
 1. Revised the code a bit. Added some comments, updated formatting so it's not ugly.
+
+# Day 4
+
+1. Create backend directory
+2. In the backend directory initialise a Node.js project and install dependencies
+        npm init -y
+        npm install express
+3. Create server.js and setup basic server
+4. Create an index.html file to apply styling to the backend with a dummy output
+5. Update server.js so that it properly applies index.html styling on the backend

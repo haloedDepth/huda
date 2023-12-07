@@ -1,8 +1,9 @@
 <script>
-  // Main application component importing necessary subcomponents
   import InputBox from './components/InputBox.svelte';
   import OutputMessage from './components/OutputMessage.svelte';
   import DynamicArea from './components/DynamicArea.svelte';
+
+  let receivedMessage = ''; // Holds the message from the backend
 </script>
 
 <style>
@@ -48,15 +49,14 @@
 
 <div class="app-container">
   <div class="dynamic-area">
-    <!-- Dynamic content area -->
     <DynamicArea />
   </div>
   <div class="input-box">
-    <!-- Input box for user interaction -->
-    <InputBox />
+    <!-- Listen for messageReceived event and update receivedMessage -->
+    <InputBox on:messageReceived={(event) => receivedMessage = event.detail} />
   </div>
   <div class="output-message">
-    <!-- Area to display output messages -->
-    <OutputMessage />
+    <!-- Pass receivedMessage to OutputMessage component -->
+    <OutputMessage message={receivedMessage} />
   </div>
 </div>

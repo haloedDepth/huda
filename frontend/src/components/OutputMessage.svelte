@@ -1,16 +1,25 @@
-<!-- OutputMessage: Displays output messages to the user -->
+<script>
+  // Function to update the message when received from InputBox
+  export let message = '';
+
+  // Event listener for messageReceived event
+  export function updateMessage(event) {
+    message = event.detail; // Update the message with the received data
+  }
+</script>
+
 <style>
-  /* Styling for the output message container */
   .output-message-container {
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 16px; /* Suitable font size for readability */
-    padding: 5px 0; /* Spacing for visual comfort */
+    font-size: 16px;
+    padding: 5px 0;
   }
 </style>
 
 <div class="output-message-container">
-  <!-- Placeholder text or dynamic content will be rendered here -->
-  OutputMessage.svelte dummy output
+  {#if message}
+    <p>{message}</p> <!-- Display the message -->
+  {/if}
 </div>

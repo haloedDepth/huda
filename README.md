@@ -32,3 +32,13 @@ Goal: Develop the basic layout and initialise frontend
 3. Create server.js and setup basic server
 4. Create an index.html file to apply styling to the backend with a dummy output
 5. Update server.js so that it properly applies index.html styling on the backend
+
+# Day 5
+
+1. Modify InputBox.svelte so it listens for enter and clears the InputBox. 
+2. Created ApiService.js with an async function to make POST requests to the backend. Import and call this function from InputBox.svelte on enter.
+3. Modified OutputMessage.svelte so it waits for MessageReceived event from App.svelte and displays the message.
+4. Created messageController.js with functions to emit MessageReceived events with the message payload. Import and call messageController from InputBox and ApiService.
+5. Created messageRoutes.js with POST route to call messageController function on request. Import and use in server.js.
+6. Created processingService.js with dummy function to simulate processing. Import and call from messageController.
+7. Achieved communication between frontend and backend by converting the message to uppercase.

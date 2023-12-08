@@ -42,3 +42,9 @@ Goal: Develop the basic layout and initialise frontend
 5. Created messageRoutes.js with POST route to call messageController function on request. Import and use in server.js.
 6. Created processingService.js with dummy function to simulate processing. Import and call from messageController.
 7. Achieved communication between frontend and backend by converting the message to uppercase.
+
+# Day 6
+
+1. Created ItemStore.js to manage state of items in DynamicArea component
+2. Created BlackBox.svelte as a dummy 'item' to test DynamicArea functionality
+3. Imported ItemStore in DynamicArea and pass it items

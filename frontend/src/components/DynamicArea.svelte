@@ -1,4 +1,9 @@
-<!-- DynamicArea: A container for dynamic content display -->
+<script>
+  import  items  from '/home/dami/project_huda/huda/frontend/src/stores/ItemStore'; // Adjust the path as needed
+  import BlackBox from '/home/dami/project_huda/huda/frontend/src/items/BlackBox.svelte'; // Adjust the path to your BlackBox component
+
+</script>
+
 <style>
   /* Container styling for dynamic area */
   .dynamic-area-container {
@@ -13,6 +18,10 @@
 </style>
 
 <div class="dynamic-area-container">
-  <!-- Placeholder or dynamic content will be rendered here -->
-  DynamicArea.svelte
+  {#each $items as item}
+    {#if item.type === 'BlackBox'}
+      <BlackBox {...item.props} />
+    {/if}
+    <!-- Add additional conditions for other item types as needed -->
+  {/each}
 </div>

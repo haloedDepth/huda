@@ -48,3 +48,7 @@ Goal: Develop the basic layout and initialise frontend
 1. Created ItemStore.js to manage state of items in DynamicArea component
 2. Created BlackBox.svelte as a dummy 'item' to test DynamicArea functionality
 3. Imported ItemStore in DynamicArea and pass it items
+
+# Day 7
+
+1. Test

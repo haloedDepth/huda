@@ -51,4 +51,4 @@ Goal: Develop the basic layout and initialise frontend
 
 # Day 7
 
-1. Test2
+1. Discord Server Release
